@@ -7,43 +7,67 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  background: url('background.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #2c3e50;
-}
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: url('A_digital_graphic_design_features_a_textured_light.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #2c3e50;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255, 255, 255, 0.6);
+      z-index: -1;
+    }
+
     header {
-      background-color: #d7f0ef;
+      background-color: #d7f0efcc;
       text-align: center;
       padding: 60px 20px;
     }
+
+    header img {
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+
     header h1 {
       font-family: 'Playfair Display', serif;
       font-size: 3em;
       margin: 0;
       color: #1c6e70;
     }
+
     header p {
       font-size: 1.2em;
       margin-top: 10px;
       color: #496a6b;
     }
+
     section {
       padding: 40px 20px;
       max-width: 800px;
       margin: auto;
+      background-color: #ffffffbb;
+      border-radius: 12px;
+      margin-bottom: 20px;
     }
+
     h2 {
       color: #1c6e70;
       font-family: 'Playfair Display', serif;
     }
+
     footer {
       background-color: #1c6e70;
       color: white;
       text-align: center;
       padding: 20px;
     }
+
     .button {
       display: inline-block;
       background-color: #1c6e70;
@@ -56,15 +80,15 @@
   </style>
 </head>
 <body>
- <header>
-  <img src="logo.png" alt="Ritual Pilates Logo" style="max-width: 200px; margin-bottom: 20px;">
-  <h1>Ritual Pilates</h1>
-  <p>Mindful movement. Spiritual connection. Everyday ritual.</p>
-</header>
+  <header>
+    <img src="ritual_pilates_logo.png" alt="Ritual Pilates Logo">
+    <h1>Ritual Pilates</h1>
+    <p>Mindful movement. Spiritual connection. Everyday ritual.</p>
+  </header>
 
   <section>
     <h2>Welcome</h2>
-    <p>At Ritual Pilates, we believe in more than just fitness. Our sessions combine movement, breath, and energy to centre your body and soul. Whether you're looking for strength, balance, or healing, our practice helps you find space for peace in your everyday ritual.</p>
+    <p>Ritual Pilates is more than a workout – it’s time for yourself. A moment of calm in your week to breathe, to move with intention, and to reconnect. Whether you're strengthening your core, improving posture, or simply carving out space for stillness, each session is your personal pause. This is fitness without pressure, movement without judgement – a ritual made just for you.</p>
   </section>
 
   <section>
@@ -75,12 +99,12 @@
 
   <section>
     <h2>About Kate</h2>
-    <p>Kate, founder of Ritual Pilates, is passionate about making movement meaningful. With a background in wellness and motherhood, she brings warmth, care, and calm to every session.</p>
+    <p>Kate first discovered Pilates before having children, after trying nearly every fitness style out there. But it was after becoming a mum that she truly reconnected with the practice. It helped her rebuild strength, improve posture, and reclaim something deeply needed: time for herself. That same balance of calm, focus and subtle strength is what she now shares in every class.</p>
   </section>
 
   <section>
     <h2>Get in Touch</h2>
-    <p>Email: hello@ritualpilates.co.uk<br>Instagram: @ritualpilates</p>
+    <p>Email: info@ritualpilates.co.uk<br>Instagram: @ritualpilates</p>
   </section>
 
   <footer>
