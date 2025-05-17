@@ -22,12 +22,12 @@
       background-attachment: fixed;
       background-size: contain;
       color: var(--ivory);
-      font-size: 1.1em;
-      line-height: 1.6;
+      font-size: 1.15em;
+      line-height: 1.8;
       text-align: center;
       position: relative;
       z-index: 0;
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); /* makes text stand out */
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     }
 
     body::after {
@@ -37,90 +37,109 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(199, 234, 219, 0.85); /* stronger overlay */
+      background: rgba(199, 234, 219, 0.85);
       z-index: 0;
       pointer-events: none;
     }
 
-    p, h1, h2 {
-      text-align: center;
-      position: relative;
-      z-index: 1;
-    }
-
     header {
-      width: 100%;
       background-color: var(--ivory);
-      padding: 20px 0;
+      padding: 24px 0;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      z-index: 2;
       position: relative;
-      text-shadow: none; /* keep header clean */
+      z-index: 2;
+      text-shadow: none;
     }
 
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.4em;
+      font-size: 2.8em;
       margin: 0;
       color: var(--deep-teal);
     }
 
     header p {
-      font-size: 1.1em;
-      margin-top: 6px;
+      font-size: 1.2em;
+      margin-top: 8px;
       color: var(--deep-teal);
     }
 
     .content {
-      padding-top: 40px;
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
       position: relative;
       z-index: 1;
     }
 
-    section {
-      padding: 50px 20px;
-      max-width: 800px;
-      margin: auto;
+    .card {
+      background-color: var(--ivory);
+      padding: 40px;
+      border-radius: 20px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      color: var(--deep-teal);
+      text-shadow: none;
     }
 
-    h2 {
+    .card h2 {
       font-family: 'Playfair Display', serif;
       font-size: 2em;
       margin-bottom: 20px;
-      color: var(--ivory);
+      color: var(--deep-teal);
     }
 
-    p {
+    .card p {
       font-size: 1.1em;
-      color: var(--ivory);
-    }
-
-    footer {
-      background-color: var(--deep-teal);
-      color: var(--ivory);
-      text-align: center;
-      padding: 26px;
-      font-size: 1em;
-      z-index: 2;
-      position: relative;
-      text-shadow: none;
+      color: var(--deep-teal);
     }
 
     .button {
       display: inline-block;
       background-color: var(--deep-teal);
       color: var(--ivory);
-      padding: 16px 28px;
+      padding: 14px 28px;
       margin-top: 30px;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
       font-size: 1.1em;
-      text-shadow: none;
+      transition: background-color 0.3s ease;
     }
 
     a.button:hover {
       background-color: #162f39;
+    }
+
+    .timetable {
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .timetable table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .timetable th, .timetable td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      color: var(--deep-teal);
+    }
+
+    .testimonial {
+      font-style: italic;
+      margin-bottom: 20px;
+      color: var(--deep-teal);
+    }
+
+    footer {
+      background-color: var(--deep-teal);
+      color: var(--ivory);
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 1em;
+      text-shadow: none;
     }
   </style>
 </head>
@@ -131,26 +150,53 @@
   </header>
 
   <div class="content">
-    <section>
+    <div class="card">
       <h2>Welcome</h2>
       <p>Ritual Pilates is more than a workout – it's time for yourself. A moment of calm in your week to breathe, to move with intention, and to reconnect. Whether you're strengthening your core, improving posture, or simply carving out space for stillness, each session is your personal pause. This is fitness without pressure, movement without judgement – a ritual made just for you.</p>
-    </section>
+    </div>
 
-    <section>
+    <div class="card">
       <h2>My Classes</h2>
       <p>I offer small, welcoming group sessions and 1:1 classes tailored to your needs. My daytime classes are designed with mums and older adults in mind, while my evening sessions are perfect for unwinding and finding space for yourself.</p>
       <a href="#" class="button">View Timetable</a>
-    </section>
+    </div>
 
-    <section>
+    <div class="card">
+      <h2>Weekly Timetable</h2>
+      <div class="timetable">
+        <table>
+          <tr><th>Day</th><th>Time</th><th>Class</th></tr>
+          <tr><td>Monday</td><td>10:00 AM</td><td>Gentle Core (Mums & Seniors)</td></tr>
+          <tr><td>Tuesday</td><td>6:30 PM</td><td>Evening Flow</td></tr>
+          <tr><td>Wednesday</td><td>10:30 AM</td><td>Posture & Breath</td></tr>
+          <tr><td>Thursday</td><td>7:00 PM</td><td>Relax & Align</td></tr>
+          <tr><td>Friday</td><td>9:30 AM</td><td>Strength & Stretch</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Book a Class</h2>
+      <p>To book your place, email <strong>info@ritualpilates.co.uk</strong> or message me on Instagram <strong>@ritualpilates</strong>.</p>
+      <a href="mailto:info@ritualpilates.co.uk" class="button">Book Now</a>
+    </div>
+
+    <div class="card">
+      <h2>What Clients Say</h2>
+      <p class="testimonial">"The calm I feel after each class is like nothing else — it’s the most peaceful part of my week." – Sarah R.</p>
+      <p class="testimonial">"Kate brings such warmth to her teaching. I always leave feeling stronger and more present." – Lisa M.</p>
+      <p class="testimonial">"These classes have helped my posture, confidence, and mindset. Just wonderful." – Fiona W.</p>
+    </div>
+
+    <div class="card">
       <h2>About Me</h2>
       <p>I first discovered Pilates before having children, after trying nearly every fitness style out there. But it was after becoming a mum that I truly reconnected with the practice. It helped me rebuild strength, improve posture, and reclaim something deeply needed: time for myself. That same balance of calm, focus and subtle strength is what I now share in every class.</p>
-    </section>
+    </div>
 
-    <section>
+    <div class="card">
       <h2>Get in Touch</h2>
       <p>Email: info@ritualpilates.co.uk<br />Instagram: @ritualpilates</p>
-    </section>
+    </div>
   </div>
 
   <footer>
