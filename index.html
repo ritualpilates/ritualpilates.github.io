@@ -16,7 +16,7 @@
       margin: 0;
       font-family: 'Open Sans', sans-serif;
       background-color: var(--logo-base);
-      background-image: url('background_logo.png');
+      background-image: url('background_logo_faded.png');
       background-repeat: no-repeat;
       background-position: center center;
       background-attachment: fixed;
@@ -25,6 +25,20 @@
       font-size: 1.1em;
       line-height: 1.6;
       text-align: center;
+      position: relative;
+      z-index: 0;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(199, 234, 219, 0.7); /* overlay */
+      z-index: 0;
+      pointer-events: none;
     }
 
     p, h1, h2 {
